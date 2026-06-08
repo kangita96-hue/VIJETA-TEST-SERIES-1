@@ -1,27 +1,12 @@
-<h2>Student Information</h2>
-<p><b>Name:</b> Angita Kumari</p>
-<p><b>Batch:</b> 2025-2026</p>
-<p><b>Roll No:</b> 73</p>
+<script>
+function login() {
+    var roll = document.getElementById("roll").value;
 
-<h2>Vijeta Test Series Results</h2>
-
-<table>
-    <tr>
-        <th>Date</th>
-        <th>Marks</th>
-    </tr>
-
-    <tr><td>05 April 2026</td><td class="absent">Absent</td></tr>
-    <tr><td>12 April 2026</td><td><b>59 / 100</b></td></tr>
-    <tr><td>19 April 2026</td><td><b>64 / 100</b></td></tr>
-    <tr><td>26 April 2026</td><td><b>66 / 100</b></td></tr>
-
-    <tr><td>03 May 2026</td><td><b>67 / 100</b></td></tr>
-    <tr><td>10 May 2026</td><td><b>68 / 100</b></td></tr>
-    <tr><td>17 May 2026</td><td><b>66 / 100</b></td></tr>
-
-    <tr><td>24 May 2026</td><td class="absent">Absent</td></tr>
-    <tr><td>31 May 2026</td><td class="absent">Absent</td></tr>
-
-    <tr><td>07 June 2026</td><td><b>70 / 100</b></td></tr>
-</table>
+    if (roll == "73") {
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("resultBox").style.display = "block";
+    } else {
+        alert("Invalid Roll Number");
+    }
+}
+</script>
